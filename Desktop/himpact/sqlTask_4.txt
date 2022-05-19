@@ -1,0 +1,4 @@
+SELECT customer.*
+FROM customer
+LEFT JOIN salesmen ON salesmen.salesman_id = customer.salesman_id
+WHERE salesman.commission > 0.12
